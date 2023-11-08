@@ -120,3 +120,28 @@ body {
 #combo-lock #combination .wheel .digit::selection {
   background: transparent;
 }/*# sourceMappingURL=style.css.map */
+
+.countdown {
+  margin-bottom: 100px;
+  z-index: 99;
+}
+.countdown span.time {
+  padding: 12px;
+  display: inline-block;
+  font-family: verdana;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 2000;
+  color: #f70202;
+  background: #000000;
+  border-radius: 10px;
+}
+button {
+  padding: 0 16px;
+  margin-right: 4px;
+  font-size: 15px;
+  line-height: 2;
+  color: #FFF;
+  background: #3E62AD;
+  border-radius: 5px;
+}
