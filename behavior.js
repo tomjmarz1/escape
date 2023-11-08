@@ -125,7 +125,7 @@ function checkLock() {
 		var audio = new Audio('unlock.mp3')
 		audio.play()
 		setTimeout(() =>{
-				window.location.replace('https://sites.google.com/holbertonschool.com/9to5escape?usp=sharing')
+				window.location.replace('./enter.html')
 		}, 3000)
 	} else {
 		document.querySelector('#indicator').classList.add('locked');
