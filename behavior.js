@@ -3,9 +3,9 @@
 // ***
 
 var combinationLock = {
-	combination: 1618,
+	combination: 925,
 	locked: true,
-	wheels: [0, 0, 0, 0],
+	wheels: [0, 0, 0],
 	increment: function(wheel) {
 		if (this.wheels[wheel] === 9) {
 			this.wheels[wheel] = 0;
@@ -121,6 +121,11 @@ function checkLock() {
 	if (combinationLock.locked === false) {
 		document.querySelector('#indicator').classList.remove('locked');
 		document.querySelector('#indicator').classList.add('unlocked');
+        var audio = new Audio('unlock.mp3')
+        audio.play()
+        setTimeout(() =>{
+            window.location.replace('./enter.html')
+        }, 3000)
 	} else {
 		document.querySelector('#indicator').classList.add('locked');
 		document.querySelector('#indicator').classList.remove('unlocked');
